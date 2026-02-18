@@ -1,0 +1,81 @@
+@use"../base/var" as *;
+
+.about{
+padding-top: 84px;
+padding-bottom:84px;
+
+&__about{
+color: $title--color;
+font-size: 11px;
+font-weight: 600;
+line-height: normal;
+text-transform: uppercase;
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+gap: 20px;
+
+
+&::before {
+      display: block;
+      content: "";
+      width: 60px;
+      height: 1px;
+      background-color: $title--color;
+    }
+}
+
+&__title{
+margin-bottom: 20px;
+color:$title--color;
+font-family: Raleway;
+font-size: 28px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.4px;
+width:306px;
+
+// @media screen and (min-width:448px) {
+//     width: 306px;
+// }
+}
+
+&__preface{
+margin-bottom: 20px;
+color: $text--color;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0.32px;
+width:100%;
+@media screen and (min-width:448px) {
+    width: 418px;
+}
+}
+
+&__text{
+margin-bottom: 40px;
+color: $text--color;
+font-size: 14px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0.28px;
+width:100%;
+@media screen and (min-width:448px) {
+    width: 418px;
+}
+}
+
+&__button{
+color: $text--color;
+font-size: 12px;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 1.08px;
+text-transform: uppercase;
+border-radius: 25px;
+border: 1px solid #FF6C00;
+padding: 12px 20px;
+
+}
+}
