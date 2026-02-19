@@ -1,1 +1,97 @@
-@use"../base/var" as *;
+@use "../base/var" as *;
+.us {
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  &__suptitle {
+    color: $title--color;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    &::before {
+      display: block;
+      content: "";
+      width: 60px;
+      height: 1px;
+      background-color: $title--color;
+    }
+  }
+
+  &__title {
+    color: $title--color;
+    font-family: Raleway;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    width: 420px;
+    margin-bottom: 20px;
+  }
+
+  &__preface {
+    color: $text--color;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+    margin-bottom: 79px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__item {
+    background-color: $us--bg--color;
+    width: 193px;
+    height: 133px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    &:nth-child(odd){
+        transform: translateY(-35px);
+    }
+  }
+
+  &__number {
+    color: $title--color;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    display: flex;
+
+
+    &::after{
+        display: block;
+        content: "";
+        width: 13px ;
+        height: 13px ;
+        background-image: url(../img/+.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+  }
+
+  &__text {
+    color: $title--color;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    width: 122px;
+  }
+}
