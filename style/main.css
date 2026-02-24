@@ -415,4 +415,119 @@ body {
   font-weight: 600;
   line-height: normal;
   width: 122px;
+}
+
+.team {
+  padding-bottom: 84px;
+  padding-top: 84px;
+  background-color: #F7F7F7;
+}
+.team__preface {
+  display: flex;
+  color: #303030;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  align-items: center;
+  gap: 20px;
+}
+.team__preface::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+.team__our {
+  color: #303030;
+  font-family: Raleway;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+  margin-top: 20px;
+  margin-bottom: 44px;
+}
+.team__list {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.team__item {
+  text-align: center;
+}
+.team__title {
+  color: #303030;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+.team__txt {
+  color: #FF6C00;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  margin-bottom: 30px;
+}
+.team__items {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.team__link {
+  border-radius: 50%;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+.team__link:hover .team__icon {
+  fill: #FF6C00;
+}
+.team__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.latin {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+.latin__preface {
+  color: #303030;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 71px;
+}
+.latin__preface::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+.latin__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.booking {
+  padding-bottom: 84px;
+  padding-top: 84px;
 }/*# sourceMappingURL=main.css.map */

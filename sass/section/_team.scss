@@ -1,0 +1,98 @@
+@use "../base/var" as *;
+
+.team {
+  padding-bottom: 84px;
+  padding-top: 84px;
+  background-color: $us--bg--color;
+
+  &__preface {
+    display: flex;
+    color: $title--color;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    align-items: center;
+    gap: 20px;
+
+    &::before {
+      display: block;
+      content: "";
+      width: 60px;
+      height: 1px;
+      background-color: $title--color;
+    }
+  }
+
+  &__our {
+    color: $title--color;
+    font-family: Raleway;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    margin-top: 20px;
+    margin-bottom: 44px;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__title {
+    color: $title--color;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+  }
+
+  &__txt {
+    color: $active--color;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    margin-bottom: 30px;
+  }
+
+  &__items {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  &__link {
+    border-radius: 50%;
+    background-color: $white--color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+
+    &:hover{
+      .team__icon{
+        fill: $active--color;
+      }
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+
+
+  }
+}
