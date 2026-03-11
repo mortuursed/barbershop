@@ -18,8 +18,16 @@
   &__form {
     display: flex;
     flex-direction: column;
-    gap: 44px;
+    gap: 30px;
     margin-top: 44px;
+   
+
+    @media screen and (min-width:720px) { 
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+      
+    }
   }
 
   &__holder {
@@ -33,6 +41,10 @@
     letter-spacing: 1.1px;
     text-transform: uppercase;
     color: $white--color;
+
+    @media screen and (min-width:720px) {
+      width: 330px;
+    }
 
     &:focus {
       border-top: none;
@@ -65,9 +77,20 @@
     text-transform: uppercase;
     border-radius: 25px;
     border: 1px solid #ff6c00;
+
+    @media screen and (min-width:720px) {
+     display: block;
+     margin-right: 550px;
+     margin-top:44px ;
+    }
   }
 }
 
 .commen {
   padding-bottom: 60px;
+
+
+  @media screen and (min-width:720px) {
+    width: 100%;
+  }
 }

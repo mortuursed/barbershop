@@ -15,6 +15,10 @@
     align-items: center;
     gap: 20px;
 
+    @media screen and (min-width: 720px) {
+      margin-left: 119px;
+    }
+
     &::before {
       display: block;
       content: "";
@@ -33,16 +37,25 @@
     letter-spacing: 2.1px;
     margin-top: 20px;
     margin-bottom: 44px;
+
+    @media screen and (min-width: 720px) {
+      margin-left: 119px;
+    }
   }
 
-  &__list{
+  &__list {
     display: flex;
     flex-direction: column;
     gap: 64px;
+    align-items: center;
   }
 
   &__item {
     text-align: center;
+
+    @media screen and (min-width: 720px) {
+      width: 450px;
+    }
   }
 
   &__title {
@@ -81,9 +94,8 @@
     width: 44px;
     height: 44px;
 
-
-    &:hover{
-      .team__icon{
+    &:hover {
+      .team__icon {
         fill: $active--color;
       }
     }
@@ -92,7 +104,5 @@
   &__icon {
     width: 20px;
     height: 20px;
-
-
   }
 }
