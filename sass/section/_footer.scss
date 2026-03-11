@@ -1,1 +1,59 @@
-@use"../base/var" as *;
+@use "../base/var" as *;
+
+.footer {
+  padding-bottom: 84px;
+  padding-top: 84px;
+
+  &__media {
+    display: flex;
+    gap: 35px;
+    justify-content: end;
+    align-items: center;
+
+
+      &::before {
+      display: block;
+      content: "";
+      width: 60px;
+      height: 1px;
+      background: $title--color;
+    }
+  }
+
+  &__insta {
+    width: 72px;
+    color: #303030;
+    font-family: "Open Sans";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
+    gap: 40px;
+  }
+
+  &__youtube {
+    width: 58px;
+    color: #303030;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
+  }
+
+  &__copy {
+    display: inline-block;
+    align-items: center;
+    color: $true--gray--color;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
+  }
+
+  &__icon {
+    width: 25px;
+    height: 25px;
+    fill: $true--gray--color;
+  }
+}

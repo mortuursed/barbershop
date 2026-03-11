@@ -3,6 +3,11 @@
 .about{
 padding-top: 84px;
 padding-bottom:84px;
+& .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
 
 &__about{
 color: $title--color;
@@ -23,6 +28,22 @@ gap: 20px;
       height: 1px;
       background-color: $title--color;
     }
+}
+
+
+&__list{
+    display:none;
+    flex-direction: column;
+    gap: 10px;
+    @media screen and (min-width:720px) {
+        display: flex;
+    }
+}
+
+
+&__photo{
+width: 330.0px;
+height: 235.0px;
 }
 
 &__title{

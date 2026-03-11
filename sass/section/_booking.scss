@@ -1,7 +1,73 @@
-@use"../base/var" as *;
+@use "../base/var" as *;
 
+.booking {
+  padding-bottom: 84px;
+  padding-top: 84px;
+  background-color: $booling--color;
 
-.booking{
-    padding-bottom: 84px;
-    padding-top: 84px;
+  &__title {
+    color: $white--color;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    margin-top: 44px;
+  }
+
+  &__holder {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $true--gray--color;
+    padding-bottom: 8px;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: $white--color;
+
+    &:focus {
+      border-top: none;
+      outline: none;
+      border-bottom: 1px solid $white--color;
+      color: $white--color;
+    }
+
+    &:focus::placeholder,
+    &:hover::placeholder {
+      color: $white--color;
+    }
+  }
+
+  &__button {
+    width: 160px;
+    height: 40px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    background-color: transparent;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: 1px solid #ff6c00;
+  }
+}
+
+.commen {
+  padding-bottom: 60px;
 }
