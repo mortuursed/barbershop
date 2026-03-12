@@ -4,7 +4,7 @@
   padding-top: 40px;
   padding-bottom: 209px;
 
-  @media screen and (min-width:720px) {
+  @media screen and (min-width: 720px) {
     padding-bottom: 40px;
     padding-top: 52px;
   }
@@ -28,7 +28,7 @@
     background-image:
       linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
       url(../img/tablet/tablet_header_bg@1x.webp);
-      position: relative;
+    position: relative;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -39,7 +39,7 @@
         url(../img/tablet/tablet_header_bg@2x.webp);
     }
 
-    @media screen and (min-width:720px) {
+    @media screen and (min-width: 720px) {
       padding-bottom: 40px;
     }
   }
@@ -93,7 +93,7 @@
 
   &__down {
     margin-top: 112px;
-    @media screen and (min-width:720px){
+    @media screen and (min-width: 720px) {
       margin-left: 100px;
     }
   }
@@ -101,20 +101,27 @@
   &__box {
     display: none;
     justify-content: space-between;
-    @media screen and (min-width:720px) {
+    @media screen and (min-width: 720px) {
       display: flex;
     }
   }
 
-
-  &__nav{
+  &__nav {
     margin-left: 100px;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 200px;
+    }
   }
 
   &__list {
     display: flex;
     align-items: center;
     gap: 16px;
+
+    @media screen and (min-width: 1200px) {
+      gap: 30px;
+    }
   }
 
   &__link {
@@ -134,6 +141,11 @@
     flex-direction: column;
     align-items: end;
     gap: 20px;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row-reverse;
+      gap: 40px;
+    }
   }
 
   &__elm:first-child {
@@ -159,6 +171,12 @@
       line-height: normal;
       letter-spacing: 1.2px;
       text-transform: uppercase;
+    }
+  }
+
+  &__down {
+    @media screen and (min-width: 1200px) {
+      margin-left: 200px;
     }
   }
 
@@ -190,6 +208,11 @@
     line-height: normal;
     letter-spacing: 2.4px;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 72px;
+      letter-spacing: 3.6px;
+    }
   }
 
   &__suptitle {
@@ -204,7 +227,7 @@
       width: 336px;
     }
 
-    @media screen and (min-width:720px) {
+    @media screen and (min-width: 720px) {
       font-size: 18px;
       letter-spacing: 0.36px;
       line-height: 30px;
@@ -212,67 +235,65 @@
     }
   }
 
-
-  &__wraper{
+  &__wraper {
     margin-top: 173px;
     display: none;
     align-items: center;
     justify-content: end;
     gap: 26px;
 
-    @media screen and (min-width:720px) {
+    @media screen and (min-width: 720px) {
       display: flex;
     }
   }
 
-
-
-  &__city{
+  &__city {
     color: $gray--color;
-font-size: 11px;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 1.1px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.1px;
 
-&::after{
-  content:"";
-  display: block;
-  width:60px ;
-  height:1px ;
-  background-color: $gray--color;
-  margin-top: 8px;
-}
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 1px;
+      background-color: $gray--color;
+      margin-top: 8px;
+    }
 
-&:hover::after{
-  background-color: $white--color;
-}
+    &:hover::after {
+      background-color: $white--color;
+    }
 
-&:hover{
-  color:$white--color;
-}
+    &:hover {
+      color: $white--color;
+    }
   }
 }
 
-
-.aside{
+.aside {
   display: none;
   position: absolute;
   top: 0;
   left: 0;
   background-color: rgb(255, 255, 255);
 
-  @media screen and (min-width:720px) {
+  @media screen and (min-width: 720px) {
     display: flex;
     // background-color: $white--color;
-    width: 90.0px;
-height: 630.0px;
-// align-items: center;
-justify-content: center;
+    width: 90px;
+    height: 630px;
+    // align-items: center;
+    justify-content: center;
 
+    @media screen and (min-width: 1200px) {
+      width: 155px;
+    }
   }
 
-
-  &__list{
+  &__list {
     display: flex;
     align-items: center;
     gap: 40px;
@@ -288,22 +309,27 @@ justify-content: center;
     }
   }
 
-  &__link{
+  &__link {
     // transform: rotate(90deg);
-color:$title--color;
-font-size: 11px;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 2.2px;
+    color: $title--color;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
   }
 
-
-  &__logo{
+  &__logo {
     position: absolute;
     top: 25px;
     left: 19px;
     // background-color: firebrick;
     width: 50px;
     height: 50px;
+
+    @media screen and (min-width: 1200px) {
+      width: 68.9px;
+      height: 55.5px;
+      left: 45px;
+    }
   }
 }
