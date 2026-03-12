@@ -5,6 +5,11 @@
   padding-top: 84px;
   background-color: $booling--color;
 
+  @media screen and (min-width:720px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   &__title {
     color: $white--color;
     text-align: center;

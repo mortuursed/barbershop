@@ -5,6 +5,11 @@
   padding-top: 84px;
   background-color: $us--bg--color;
 
+  @media screen and (min-width:720px) {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
   &__preface {
     display: flex;
     color: $title--color;

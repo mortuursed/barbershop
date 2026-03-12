@@ -3,6 +3,11 @@
   // background-color:$text--color;
   padding-top: 40px;
   padding-bottom: 209px;
+
+  @media screen and (min-width:720px) {
+    padding-bottom: 40px;
+    padding-top: 52px;
+  }
   background-image:
     linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
     url(../img/phone/phone_header@1x.webp);
@@ -260,7 +265,7 @@ letter-spacing: 1.1px;
     display: flex;
     // background-color: $white--color;
     width: 90.0px;
-height: 618.0px;
+height: 630.0px;
 // align-items: center;
 justify-content: center;
 
